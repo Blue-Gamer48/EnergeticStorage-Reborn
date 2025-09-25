@@ -31,7 +31,7 @@ val kotlinxCollectionsImmutableVersion: String by project
 val gsonVersion: String by project
 
 repositories {
-    maven("https://nexus.flawcra.cc/repository/maven-mirrors/")
+    maven("https://nexus.modlabs.cc/repository/maven-mirrors/")
 }
 
 val deliverDependencies = listOf(
