@@ -26,7 +26,7 @@ public class DependencyLoader implements PluginLoader {
                 Objects.requireNonNull(getClass().getClassLoader().getResourceAsStream(".dependencies"))))) {
             reader.lines().forEach(dependency -> maven.addDependency(new Dependency(new DefaultArtifact(dependency), null)));
 
-            maven.addRepository(new RemoteRepository.Builder("flawcra", "default", "https://nexus.flawcra.cc/repository/maven-mirrors/").build());
+            maven.addRepository(new RemoteRepository.Builder("flawcra", "default", "https://nexus.modlabs.cc/repository/maven-mirrors/").build());
         } catch (Exception e) {
             LOGGER.log(Level.SEVERE, "Failed to load dependencies", e);
         }
